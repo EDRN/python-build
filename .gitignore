@@ -1,0 +1,15 @@
+*.egg-info
+*.git-info
+*.log
+*.py[co]
+*.sublime-workspace
+.*.cfg
+._*
+.DS_Store
+.idea/
+_build
+bin
+build
+dist
+eggs
+typescript

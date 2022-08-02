@@ -1,0 +1,9 @@
+*.sublime-*
+.*.cfg
+.DS_Store
+.git
+.gitignore
+build
+dist
+LICENSE.md
+README.md
