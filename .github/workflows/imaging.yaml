@@ -32,7 +32,7 @@ jobs:
         runs-on: ubuntu-latest
         strategy:
             matrix:
-                python-verison: ['3.8', '3.9', '3.10', '3.11', '3.12']
+                python-version: ['3.8', '3.9', '3.10', '3.11', '3.12']
         steps:
             -
                 name: 💳 Docker Hub Identification
@@ -57,8 +57,6 @@ jobs:
                     file: Dockerfile
                     platforms: linux/amd64,linux/arm64
                     push: true
-                    tags: |
-                        ${{secrets.DOCKERHUB_USERNAME}}/python-build:${{matrix.python-version}}
-                        ${{secrets.DOCKERHUB_USERNAME}}/python-build:latest
+                    tags: ${{secrets.DOCKERHUB_USERNAME}}/python-build:${{matrix.python-version}}
 
 ...
