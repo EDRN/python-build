@@ -19,6 +19,7 @@ on:
             -   main
         paths:
             -   'Dockerfile'
+            -   '.github/workflows/imaging.yaml'
 
 
 # Jobs
